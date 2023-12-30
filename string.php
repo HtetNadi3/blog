@@ -63,6 +63,7 @@ $second = "World hello mm";
 echo ucfirst($str)."<br>";
 echo lcfirst($second)."<br>";
 
-$mail = "htt@gmdail.commmm";
-echo  str_replace('gmdmail','gmail',$mail);
+$mail = "http@gmdail.commmm";
+echo  str_replace("gmdail","gmail",$mail);
+echo str_replace("commmm","com",$mail);
 

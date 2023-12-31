@@ -122,3 +122,10 @@ echo "<br>";
 $one = 2 ;
 $call =fn ($two) => $one * $two;//no need globa or use()
  echo $call(10);
+
+ function myProfile($name, $phone, $email){
+  echo "my name is $name and phone is $phone and email is $email";
+ }
+ myProfile("james", "094579834", "afjdagl@gmil.com");
+ myProfile("093857341", "htet htet", "oei@gmail.com");
+ myProfile(phone: "475092834", email: "htet@gmail.com", name: "koko");

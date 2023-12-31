@@ -71,11 +71,54 @@
 // }age($age);
 // echo "outside" .$age;
 
-$hobby1 = "football";
-$hobby2 = "swimming";
-define("hobby3", "reading");
-function hobby(){
-  global $hobby1, $hobby2;
-  echo "my hobbies are $hobby1 and $hobby2 and " . hobby3;
+// $hobby1 = "football";
+// $hobby2 = "swimming";
+// define("hobby3", "reading");
+// function hobby(){
+//   global $hobby1, $hobby2;
+//   echo "my hobbies are $hobby1 and $hobby2 and " . hobby3;
+// }
+// hobby();
+
+//function name ko var value nae tu lox ya nay tl
+//kyaung tg tg nat
+function two($a){
+  echo "similar js and $a";
 }
-hobby();
+$pp = "two";
+//echo $pp;
+$pp("php");
+
+
+//array_map
+$numbers =[4,6,7,8,9];
+function add($a){
+  return $a + 3;
+}
+$res = array_map("add", $numbers);
+print_r($res);
+
+
+//functon expression like js
+$add = function ($a, $b){
+  echo $a + $b;
+};
+$add(100,200);
+
+
+//a yay kyee
+$myName = "Nadi";
+$callMe = function () use ($myName){
+  echo "my name is $myName";
+};
+
+$callMe();
+
+//arrow function (php => 7.4)
+$ar = fn($aa) => $aa *5;
+echo $ar(3);
+
+echo "<br>";
+$one = 2 ;
+$call =fn ($two) => $one * $two;//no need globa or use()
+ echo $call(10);
